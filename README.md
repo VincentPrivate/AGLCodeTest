@@ -1,4 +1,5 @@
-# AGL Developer Test - Programming challenge (Azure Function) #
+# AGL Developer Test - Programming challenge #
+# Azure Function #
 
 This provides a trial code repository for coding test in AGL.
 
