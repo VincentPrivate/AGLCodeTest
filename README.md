@@ -1,38 +1,22 @@
-# Coding Test for AGL with Azure Functions #
+# Azure Function - AGL Code Test #
 
-This provides a sample code repository for coding test in AGL before being engaged.
+This provides a trial code repository for coding test in AGL.
 
 
 ## Requirements ##
 
-Based on the instruction on [http://agl-developer-test.azurewebsites.net/](http://agl-developer-test.azurewebsites.net/), a candidate is required to submit an application to fulfill the requirements.
-
 * Data source can be aquired from a JSON object by sending an HTTP request to [http://agl-developer-test.azurewebsites.net/people.json](http://agl-developer-test.azurewebsites.net/people.json).
 * The data source needs to be processed to display result with the rules of:
-  * Display all cats in alphabetical order,
-  * All cats are listed under their owners' gender, and
-  * Can owners' genders are considered as headings.
-* Use LINQ for grouping and sorting the data source.
+  * All cats in alphabetical order
+  * All cats under their owners' gender
+  * Pet owners' genders as headings
+* LINQ for grouping and sorting the data source.
 
 
 ## Prerequisites ##
 
-* [Visual Studio 2017 (v15.4.1)](https://www.visualstudio.com/)
+* [Visual Studio 2017 (v15.5.2)](https://www.visualstudio.com/)
 * [Azure Storage Emulator v5.2](https://docs.microsoft.com/en-au/azure/storage/common/storage-use-emulator)
-
-For your local debugging purpose, the `local.settings.json` should exist. If it doesn't, create one. The bare minimum content of it should look like:
-
-```csharp
-{
-  "IsEncrypted": false,
-  "Values": {
-    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
-    "AzureWebJobsDashboard": "UseDevelopmentStorage=true",
-
-    "Agl.Endpoint": "http://agl-developer-test.azurewebsites.net/people.json"
-  }
-}
-```
 
 
 ## Implementation ##
