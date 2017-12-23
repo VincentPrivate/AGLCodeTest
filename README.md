@@ -27,12 +27,14 @@ In order to satisfy the requirements, I used the **serverless** architecture &nd
 * It only focuses on the code itself, which is basically business logic, and
 * It's easy to build
 
-The application consists of number of small libraries that only take care of one responsibility respectively &ndash; settings, models, services, functions and IoC. Also each project has its corresponding test projects for unit testing.
+The application consists of number of small libraries that only take care of one responsibility respectively &ndash; settings, models, services, functions and IoC. 
+Also each project has its corresponding test projects for unit testing.
 
 
 ## Reproduction ##
 
-The application can be run on either local machine or Azure Functions instance on Azure. In order to run this application, use Visual Studio or Azure Function Tooling npm package. If Visual Studio is chosen, follow the steps below:
+The application can be run on either local machine or Azure Functions instance on Azure. 
+In order to run this application, use Visual Studio or Azure Function Tooling npm package. If Visual Studio is chosen, follow the steps below:
 
 * Clone the repository to your local machine.
 * Open `AGLCodeTest.sln`.
