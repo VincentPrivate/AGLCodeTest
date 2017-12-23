@@ -1,30 +1,30 @@
-# AGL Developer Test - Programming challenge - Azure Function #
+# AGL Developer Test - Programming challenge (Azure Function) #
 
 This provides a trial code repository for coding test in AGL.
 
 
 ## Requirements ##
 
-* Data source can be aquired from a JSON object by sending an HTTP request to [http://agl-developer-test.azurewebsites.net/people.json](http://agl-developer-test.azurewebsites.net/people.json).
+* Data source, a JSON object by sending an HTTP request to [http://agl-developer-test.azurewebsites.net/people.json](http://agl-developer-test.azurewebsites.net/people.json)
 * The data source needs to be processed to display result with the rules of:
   * All cats in alphabetical order
   * All cats under their owners' gender
   * Pet owners' genders as headings
-* LINQ for grouping and sorting the data source.
+* LINQ for grouping and sorting the data source
 
 
 ## Prerequisites ##
 
 * [Visual Studio 2017 (v15.5.2)](https://www.visualstudio.com/)
-* [Azure Storage Emulator v5.2](https://docs.microsoft.com/en-au/azure/storage/common/storage-use-emulator)
+* [Azure Storage Emulator v5.3](https://docs.microsoft.com/en-au/azure/storage/common/storage-use-emulator)
 
 
 ## Implementation ##
 
-In order to satisfy the requirements, I used the **serverless** architecture &ndash; Azure Functions, because:
+**serverless** architecture &ndash; Azure Functions, because:
 
-* It doesn't need to setup an application environment,
-* It only focuses on the code itself, which is basically business logic, and
+* No need to setup an application environment
+* It only focuses on the code itself, which is basically business logic
 * It's easy to build
 
 The application consists of number of small libraries that only take care of one responsibility respectively &ndash; settings, models, services, functions and IoC. 
