@@ -34,7 +34,8 @@ Also each project has its corresponding test projects for unit testing.
 ## Reproduction ##
 
 The application can be run on either local machine or Azure Functions instance on Azure. 
-In order to run this application, use Visual Studio or Azure Function Tooling npm package. If Visual Studio is chosen, follow the steps below:
+In order to run this, use Visual Studio or Azure Function Tooling npm package. 
+If Visual Studio, follow the steps below:
 
 * Clone the repository to your local machine.
 * Open `AGLCodeTest.sln`.
