@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{974E7B3F-80DE-486C-8968-27219D2F079F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AglCodingTest.Functions</RootNamespace>
+    <AssemblyName>AglCodingTest.Functions</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Legacy2CPSWorkaround" Version="1.0.0">
+      <PrivateAssets>All</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AspNet.WebApi.Core">
+      <Version>5.2.3</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Azure.WebJobs">
+      <Version>2.1.0-beta4</Version>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>9.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="WebApiContrib.Formatting.Html">
+      <Version>2.0.0</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AglCodingTestHttpTriggerFunction.cs" />
+    <Compile Include="FunctionBase.cs" />
+    <Compile Include="FunctionOptions\AglCodingTestHttpTriggerFunctionOptions.cs" />
+    <Compile Include="FunctionOptions\FunctionOptionsBase.cs" />
+    <Compile Include="IAglCodingTestHttpTriggerFunction.cs" />
+    <Compile Include="IFunction.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AglCodingTest.Extensions\AGLCodeTest.Extensions.csproj">
+      <Project>{b6bb1c52-6b75-4316-b50b-9a6a160b2252}</Project>
+      <Name>AGLCodeTest.Extensions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AglCodingTest.Models\AGLCodeTest.Models.csproj">
+      <Project>{c7d5bbb5-482d-49f6-9e0e-9f33f95a64cd}</Project>
+      <Name>AGLCodeTest.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AglCodingTest.Services\AGLCodeTest.Services.csproj">
+      <Project>{2d1b8fd2-f4f5-4354-80fb-569d3491d78b}</Project>
+      <Name>AGLCodeTest.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AglCodingTest.Settings\AGLCodeTest.Settings.csproj">
+      <Project>{074176de-e0ed-455c-814b-c96c5c3e85df}</Project>
+      <Name>AGLCodeTest.Settings</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
