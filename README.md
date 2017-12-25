@@ -45,7 +45,7 @@ If Visual Studio, follow the steps below:
 * The required result will be displayed.
 * A querystring parameter, `type` can be used to specify the pet type. Currently, the `type` parameter only considers three values &ndash; `Dog`, `Cat` and `Fish`
 
-Valid requests sampless
+Valid request sampless
 
 * [http://localhost:7071/pets](http://localhost:7071/pets)
 * [http://localhost:7071/pets?type=cat](http://localhost:7071/pets?type=cat)
