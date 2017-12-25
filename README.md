@@ -21,11 +21,11 @@ This provides a trial code repository for coding test in AGL.
 
 ## Implementation ##
 
-**serverless** architecture &ndash; Azure Functions, because:
+**serverless** architecture &ndash; Azure Functions for
 
-* No need to setup an application environment
-* It only focuses on the code itself, which is basically business logic
-* It's easy to build
+* not to setup an application environment
+* to focus on the code itself, which is basically business logic
+* to make easy to build
 
 The application consists of number of small libraries that only take care of one responsibility respectively &ndash; settings, models, services, functions and IoC. 
 Also each project has its corresponding test projects for unit testing.
@@ -45,7 +45,7 @@ If Visual Studio, follow the steps below:
 * The required result will be displayed.
 * A querystring parameter, `type` can be used to specify the pet type. Currently, the `type` parameter only considers three values &ndash; `Dog`, `Cat` and `Fish`
 
-Valid requests are:
+Valid requests sampless
 
 * [http://localhost:7071/pets](http://localhost:7071/pets)
 * [http://localhost:7071/pets?type=cat](http://localhost:7071/pets?type=cat)
