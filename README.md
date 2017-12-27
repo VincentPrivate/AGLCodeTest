@@ -21,10 +21,10 @@ This provides a trial code repository for coding test in AGL.
 
 ## Implementation ##
 
-**serverless** architecture &ndash; Azure Functions for
+**serverless** architecture &ndash; Azure Functions
 
 * not to setup an application environment
-* to focus on the code itself, which is basically business logic
+* to focus on the code itself, the business logic
 * to make easy to build
 
 The application consists of number of small libraries that only take care of one responsibility respectively &ndash; settings, models, services, functions and IoC. 
